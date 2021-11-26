@@ -14,7 +14,8 @@ import math as m
 # n = m.radians(n)
 
 # Converts value in sin
-# n = m.sin(n)
+# value = m.radians(30)
+# n = m.sin(value)
 
 # Converts value in cos
 # n = m.cos(n)
