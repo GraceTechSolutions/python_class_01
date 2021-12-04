@@ -50,3 +50,10 @@
 # greet = 'Hello, my name is {} and i am {}'.format(name, age)
 
 # print(greet)
+
+
+# Convert Character into ascii
+# x = 'A'
+# ascii_a = ord(x)
+
+# print('ASCII of {} is {}'.format(x, ascii_a))
