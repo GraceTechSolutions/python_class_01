@@ -77,3 +77,52 @@ def sub(first_number:int, second_number:int):
 #     print('Hello {}\nYou are {}'.format(name, age))
 
 # greet(age=23)
+
+# Variable length args [0]
+# def sum(f_number: int, *args):
+#     res = f_number
+#     for num in args:
+#         res += num
+#     print(res)
+
+# sum(2, 4, 1, 3)
+
+# Variable length args [1]
+# def print_all(f_number: int, **kwargs):
+#     print(f'Your first number is {f_number}')
+#     print(kwargs)
+
+# print_all(10, name='Jay', age=23, home='Mumbai')
+
+
+# Local and global variables
+# var1 = 100
+
+# def create_var(x):
+#     global var1
+#     var1 = x
+#     print(var1)
+
+# create_var(20)
+# print(var1)
+
+
+# Recursive functions
+# def factorial(n):
+#     if n == 0:
+#         result = 1
+#     else:
+#          result = n*factorial(n-1)
+    
+#     return result
+
+# res = factorial(4)
+# print(res)
+
+# Anonymous functions or Lambdas
+# def square(n):
+#     return n*n
+
+# sq = lambda n: n*n
+
+# print(sq(5))
