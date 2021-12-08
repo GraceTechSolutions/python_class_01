@@ -60,8 +60,8 @@
 # 3. Default args
 # 4. Variable length args
 
-def sub(first_number:int, second_number:int):
-    return first_number - second_number
+# def sub(first_number:int, second_number:int):
+#     return first_number - second_number
 
 # Postioonal args
 # res = sub(x, y)
@@ -126,3 +126,149 @@ def sub(first_number:int, second_number:int):
 # sq = lambda n: n*n
 
 # print(sq(5))
+
+
+# Filter
+#
+# def check_even(y):
+#     return y%2 == 0
+# 
+# l = [1,2,3,4,5,6,7,8,9]
+# res = filter(lambda y: y%2==0, l)
+# print(list(res))
+# print(res)
+# print(type(res))
+
+
+# Map
+# def add_10(n):
+#     return n + 10
+# 
+# l = [1,2,3,4,5,6,7,8,9]
+# res = map(lambda n: n + 10, l)
+# print(res)
+# print(list(res))
+
+
+# Reduce
+# from functools import reduce
+# def add_all(x, y):
+#     print(f'First is {x} & second is {y}')
+#     return x + y
+# 
+# l = [1,2,3,4]
+# res = reduce(add_all, l)
+# print(res)
+# print(type(res))
+
+
+
+# Decorators
+
+# def sub(x, y):
+#     print(x-y)
+
+# def div(x, y):
+#     print(x/y)
+
+
+# def smart(func):
+#     def main(a, b):
+#         if a < b:
+#             a,b = b,a
+#         return func(a, b)
+    
+#     return main
+
+# s_sub = smart(sub)
+# s_div = smart(div)
+
+# valx = 3
+# valy = 6
+
+# sub(valx, valy)
+# s_sub(valx, valy)
+
+# div(valx, valy)
+# s_div(valx, valy)
+
+
+
+# Function Decorators
+# def print_all(func):
+
+#     def main():
+#         print('I am from print_all function')
+#         return func()
+    
+#     return main
+
+
+# @print_all
+# def greet():
+#     print('Good morning..')
+
+# greet()
+
+
+
+# def smart(func):
+#     def main(a, b):
+#         if a < b:
+#             a,b = b,a
+#         return func(a, b)
+    
+#     return main
+
+# @smart
+# def div(x, y):
+#     print(x/y)
+
+
+# div(2, 8)
+
+
+
+
+
+#(not) Generators
+# Find first 10 even numbers
+# def find():
+#     n = 1
+#     i = 1
+#     ret_list = []
+#     while True:
+#         num = n%2
+#         if num == 0:
+#             ret_list.append(n)
+#             i+=1
+        
+#         n += 1
+#         if i > 10:
+#             break
+#     return ret_list
+
+# print(find())
+
+# ret_list --
+
+
+# Generators
+def find():
+    n = 1
+    i = 1
+    while True:
+        num = n%2
+        if num == 0:
+            yield n
+            i+=1
+        
+        n += 1
+        if i > 10:
+            break
+
+# ret_value -----------
+
+
+for i in range(5):
+    print(next(find()))
