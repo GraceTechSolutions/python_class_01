@@ -254,21 +254,24 @@
 
 
 # Generators
-def find():
-    n = 1
-    i = 1
-    while True:
-        num = n%2
-        if num == 0:
-            yield n
-            i+=1
+# def find():
+#     n = 1
+#     i = 1
+#     while True:
+#         num = n%2
+#         if num == 0:
+#             yield n
+#             i+=1
         
-        n += 1
-        if i > 10:
-            break
+#         n += 1
+#         if i > 10:
+#             break
 
 # ret_value -----------
 
+# Modules & main function
+# from modules import print_main as pm1
+# from day9 import print_main as pm2
 
-for i in range(5):
-    print(next(find()))
+# pm1()
+# pm2()
