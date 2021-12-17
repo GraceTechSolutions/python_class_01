@@ -110,7 +110,7 @@ e3 = [5, 6, 7, 8]
 
 
 # Tuples
-t = (1, 2, 3, 4, 5)
-t2  = tuple(e3)
+# t = (1, 2, 3, 4, 5)
+# t2  = tuple(e3)
 
-print(type(t2))
+# print(type(t2))
