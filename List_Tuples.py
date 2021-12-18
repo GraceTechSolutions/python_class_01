@@ -105,12 +105,63 @@ e3 = [5, 6, 7, 8]
 
 
 
-
-
-
-
 # Tuples
 # t = (1, 2, 3, 4, 5)
 # t2  = tuple(e3)
 
 # print(type(t2))
+# res = tuple(sorted(t, reverse=True))
+# print(res)
+
+
+# Nested tuple
+# t = (1,2,3,4, (7,8,9))
+# print(t[4][0])
+
+# emp = (
+#     (10, 'Jay', 1991),
+#     (4, 'Raj', 1994),
+#     (7, 'Neha', 1992),
+#     (6, 'Mohan', 1989)
+# )
+
+# res = sorted(emp, reverse=True) #Sort by work exp
+# res = sorted(emp, key=lambda x: x[1]) #Sort by name
+# res = sorted(emp, key=lambda x: x[2]) #Sort by dob
+
+# print(res)
+
+# Inserting element in tuple
+# t = (1,2,3,4,5)
+# pos = 3
+# element = 9
+
+# y = t[:pos-1]
+# y += (element,)
+# t = y + t[pos-1:]
+
+# print(t)
+
+# Delete
+# t = (1,2,3,4,5)
+# pos = 3
+# print(t)
+
+# y = t[:pos-1]
+# t = y + t[pos:]
+
+# print(t)
+
+
+# Update
+# t = (1,2,3,4,5)
+# pos = 3
+# element = 8
+
+# print(t)
+
+# y = t[:pos-1]
+# y += (element,)
+# t = y + t[pos:]
+
+# print(t)
